@@ -1,1 +1,163 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #00D084;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.product {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px;
+}
+
+.product__photo {
+  width: 50%;
+  background: linear-gradient(#b4ec51, #429321);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+.photo-container {
+  padding: 20px;
+  position: relative;
+}
+
+.photo-main {
+  text-align: center;
+  position: relative;
+}
+
+.photo-main img {
+  width: 100%;
+  max-width: 300px;
+  transform: translateY(-30px);
+}
+
+.controls {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.photo-album {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px 20px;
+}
+
+.photo-album ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.photo-album ul li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product__info {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.title span {
+  font-size: 14px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.price {
+  color: #E53935;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.variant h3 {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.variant ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.variant ul li img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+.description h3 {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.description ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 0;
+  border: none;
+  background-color: #F44336;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
